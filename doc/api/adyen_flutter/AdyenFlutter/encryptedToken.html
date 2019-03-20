@@ -83,7 +83,7 @@
     <section class="multi-line-signature">
       <span class="returntype"><a href="dart-async/Future-class.html">Future</a><span class="signature">&lt;<wbr><span class="type-parameter"><a href="dart-core/String-class.html">String</a></span>&gt;</span></span>
             <span class="name ">encryptedToken</span>
-(<wbr>{<span class="parameter" id="encryptedToken-param-publicKeyToken"><span>@required</span> <span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">publicKeyToken</span>, </span> <span class="parameter" id="encryptedToken-param-environment"><span class="type-annotation"><a href="adyen_flutter/Environment-class.html">Environment</a></span> <span class="parameter-name">environment</span>: <span class="default-value">Environment.TEST</span>, </span> <span class="parameter" id="encryptedToken-param-holderName"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">holderName</span>, </span> <span class="parameter" id="encryptedToken-param-card"><span>@required</span> <span class="type-annotation"><a href="adyen_flutter/CreditCard-class.html">CreditCard</a></span> <span class="parameter-name">card</span>, </span> <span class="parameter" id="encryptedToken-param-generationDate"><span>@required</span> <span class="type-annotation"><a href="dart-core/DateTime-class.html">DateTime</a></span> <span class="parameter-name">generationDate</span></span> })
+(<wbr>{<span class="parameter" id="encryptedToken-param-publicKeyToken"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">publicKeyToken</span>, </span> <span class="parameter" id="encryptedToken-param-environment"><span class="type-annotation"><a href="adyen_flutter/Environment-class.html">Environment</a></span> <span class="parameter-name">environment</span>: <span class="default-value">Environment.TEST</span>, </span> <span class="parameter" id="encryptedToken-param-holderName"><span class="type-annotation"><a href="dart-core/String-class.html">String</a></span> <span class="parameter-name">holderName</span>, </span> <span class="parameter" id="encryptedToken-param-card"><span class="type-annotation"><a href="adyen_flutter/CreditCard-class.html">CreditCard</a></span> <span class="parameter-name">card</span>, </span> <span class="parameter" id="encryptedToken-param-generationDate"><span class="type-annotation"><a href="dart-core/DateTime-class.html">DateTime</a></span> <span class="parameter-name">generationDate</span></span> })
       
     </section>
     <section class="desc markdown">
@@ -94,11 +94,11 @@ It requires your <code>publicKeyToken</code>, <code>card</code> and a <code>gene
     <section class="summary source-code" id="source">
       <h2><span>Implementation</span></h2>
       <pre class="language-dart"><code class="language-dart">static Future&lt;String&gt; encryptedToken(
-    {@required String publicKeyToken,
+    {String publicKeyToken,
     Environment environment = Environment.TEST,
     String holderName,
-    @required CreditCard card,
-    @required DateTime generationDate}) async {
+    CreditCard card,
+    DateTime generationDate}) async {
   ArgumentError.checkNotNull(publicKeyToken, &#39;publicKeyToken&#39;);
   ArgumentError.checkNotNull(generationDate, &#39;generationDate&#39;);
   ArgumentError.checkNotNull(card, &#39;card&#39;);
@@ -133,7 +133,7 @@ It requires your <code>publicKeyToken</code>, <code>card</code> and a <code>gene
 
 <footer>
   <span class="no-break">
-    adyen_flutter 0.0.1
+    adyen_flutter 0.0.2
   </span>
 
   
