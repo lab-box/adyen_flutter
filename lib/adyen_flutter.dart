@@ -1,6 +1,4 @@
 import 'dart:async';
-import 'package:meta/meta.dart';
-
 import 'package:flutter/services.dart';
 
 class AdyenFlutter {
@@ -9,11 +7,11 @@ class AdyenFlutter {
   /// Encrypts Card information into a single token after requesting a public token from your [publicKeyToken].
   /// It requires your [publicKeyToken], [card] and a [generationDate].
   static Future<String> encryptedToken(
-      {@required String publicKeyToken,
+      {String publicKeyToken,
       Environment environment = Environment.TEST,
       String holderName,
-      @required CreditCard card,
-      @required DateTime generationDate}) async {
+      CreditCard card,
+      DateTime generationDate}) async {
     ArgumentError.checkNotNull(publicKeyToken, 'publicKeyToken');
     ArgumentError.checkNotNull(generationDate, 'generationDate');
     ArgumentError.checkNotNull(card, 'card');
@@ -41,10 +39,10 @@ class AdyenFlutter {
   /// Encrypts Card information into an Encrypted card after requesting a public token from your [publicKeyToken].
   /// It requires your [publicKeyToken], [card] and a [generationDate].
   static Future<CreditCard> encryptedCard(
-      {@required String publicKeyToken,
+      {String publicKeyToken,
       Environment environment = Environment.TEST,
-      @required CreditCard card,
-      @required DateTime generationDate}) async {
+      CreditCard card,
+      DateTime generationDate}) async {
     ArgumentError.checkNotNull(publicKeyToken, 'publicKeyToken');
     ArgumentError.checkNotNull(generationDate, 'generationDate');
     ArgumentError.checkNotNull(card, 'card');
@@ -73,7 +71,7 @@ class AdyenFlutter {
           expiryMonth: encryptedExpiryMonth,
           expiryYear: encryptedExpiryYear);
     } catch (ex) {
-      throw new Exception("Could not encrypt the card:$ex");
+      throw new Exception("Could not encrypt the card from the input card:$ex");
     }
   }
 }
@@ -95,8 +93,5 @@ class CreditCard {
   final String expiryYear;
 
   CreditCard(
-      {@required this.number,
-      @required this.securityCode,
-      @required this.expiryMonth,
-      @required this.expiryYear});
+      {this.number, this.securityCode, this.expiryMonth, this.expiryYear});
 }
