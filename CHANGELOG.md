@@ -1,3 +1,7 @@
+## 0.0.3
+
+Updated the package description that was too long this time
+
 ## 0.0.2
 
 Added the API documentation and resolved somme dependencies conflict.

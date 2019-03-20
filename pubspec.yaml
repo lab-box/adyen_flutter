@@ -1,6 +1,6 @@
 name: adyen_flutter
 description: A Plugin for the Client side encryption of the credit card information to supports the Adyen API Integration flow.
-version: 0.0.2
+version: 0.0.3
 author: Alexandre Roba <alexandre.roba@arobanet.be>
 homepage: https://github.com/lab-box/adyen_flutter
 
