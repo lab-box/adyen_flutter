@@ -6,7 +6,8 @@ import 'package:flutter/services.dart';
 class AdyenFlutter {
   static const MethodChannel _channel = const MethodChannel('adyen_flutter');
 
-  /// Encrypts Card information after requesting public key from token into a single string token
+  /// Encrypts Card information into a single token after requesting a public token from your [publicKeyToken].
+  /// It requires your [publicKeyToken], [card] and a [generationDate].
   static Future<String> encryptedToken(
       {@required String publicKeyToken,
       Environment environment = Environment.TEST,
@@ -37,7 +38,8 @@ class AdyenFlutter {
     }
   }
 
-  /// Encrypts Card information after requesting public key from token into a card with encrypted values
+  /// Encrypts Card information into an Encrypted card after requesting a public token from your [publicKeyToken].
+  /// It requires your [publicKeyToken], [card] and a [generationDate].
   static Future<CreditCard> encryptedCard(
       {@required String publicKeyToken,
       Environment environment = Environment.TEST,

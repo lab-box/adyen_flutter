@@ -1,7 +1,7 @@
 name: adyen_flutter
 description: An Adyen Flutter plugin for tha API integration
 version: 0.0.1
-author: Alexandre Roba
+author: Alexandre Roba <alexandre.roba@arobanet.be>
 homepage: https://github.com/lab-box/adyen_flutter
 
 environment:
@@ -10,6 +10,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  meta: ^1.1.7
 
 dev_dependencies:
   flutter_test:
