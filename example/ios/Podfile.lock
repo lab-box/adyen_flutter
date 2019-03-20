@@ -1,0 +1,35 @@
+PODS:
+  - Adyen/Card (2.5.0):
+    - Adyen/Core
+  - Adyen/Core (2.5.0):
+    - AdyenInternal (= 2.5.0)
+  - adyen_flutter (0.0.1):
+    - Adyen/Card
+    - Flutter
+  - AdyenInternal (2.5.0)
+  - Flutter (1.0.0)
+
+DEPENDENCIES:
+  - adyen_flutter (from `.symlinks/plugins/adyen_flutter/ios`)
+  - Flutter (from `.symlinks/flutter/ios`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Adyen
+    - AdyenInternal
+
+EXTERNAL SOURCES:
+  adyen_flutter:
+    :path: ".symlinks/plugins/adyen_flutter/ios"
+  Flutter:
+    :path: ".symlinks/flutter/ios"
+
+SPEC CHECKSUMS:
+  Adyen: 39006598ca0cb4daf3a00ac196de84ce61da846f
+  adyen_flutter: c6bdf4fd189c4a228ac0e31569bff0c38202ea1e
+  AdyenInternal: 503d83c9f2ccc5403b960877a1dade881415c5a3
+  Flutter: 58dd7d1b27887414a370fcccb9e645c08ffd7a6a
+
+PODFILE CHECKSUM: ebd43b443038e611b86ede96e613bd6033c49497
+
+COCOAPODS: 1.6.1
