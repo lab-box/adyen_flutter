@@ -6,11 +6,11 @@ Pod::Spec.new do |s|
   s.version          = '0.0.1'
   s.summary          = 'An Adyen Flutter plugin for tha API integration'
   s.description      = <<-DESC
-An Adyen Flutter plugin for tha API integration
+An Adyen Flutter plugin to support the API integration
                        DESC
-  s.homepage         = 'http://example.com'
+  s.homepage         = 'http://alexandreroba.com'
   s.license          = { :file => '../LICENSE' }
-  s.author           = { 'Your Company' => 'email@example.com' }
+  s.author           = { 'Alexandre Roba' => 'alexandre.roba@arobanet.be' }
   s.source           = { :path => '.' }
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'

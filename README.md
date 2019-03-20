@@ -1,14 +1,10 @@
 # adyen_flutter
 
-An Adyen Flutter plugin for tha API integration
+An Adyen Flutter plugin to support the Adyen API integration
 
 ## Getting Started
 
-This project is a starting point for a Flutter
-[plug-in package](https://flutter.io/developing-packages/),
-a specialized package that includes platform-specific implementation code for
-Android and/or iOS.
-
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.io/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+This Plugin relies on the following Adyen SDK:
++ [Adyen iOS SDK](https://github.com/Adyen/adyen-ios)
+    by the [Adyen Pod 2.7.2](https://cocoapods.org/pods/Adyen)
++ [Adyen Android SDK](https://github.com/Adyen/adyen-android)
