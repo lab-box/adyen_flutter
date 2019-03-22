@@ -22,3 +22,8 @@ The Android version requires the following permission to be set:
 ```xml
 <uses-permission android:name="android.permission.INTERNET"/>
 ```
+
+## iOS
+
+The iOS version requires the ios hosting project to target iOS 10.3 or above.
+This is a limitation of the iOS SDK.

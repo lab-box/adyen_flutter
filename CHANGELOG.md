@@ -1,3 +1,7 @@
+## 0.0.4
+
+Updated the read me file
+
 ## 0.0.3
 
 Updated the package description that was too long this time

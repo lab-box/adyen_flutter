@@ -150,6 +150,18 @@ encryptedCode:${encryptedCard.securityCode}\r\n
 encryptedMonth:${encryptedCard.expiryMonth}\r\n
 encryptedYear:${encryptedCard.expiryYear}\r\n
 ''';
+                      print('Encrypted number:');
+                      print(encryptedCard.number);
+                      print('');
+                      print('Encrypted security code:');
+                      print(encryptedCard.securityCode);
+                      print('');
+                      print('Encrypted expiry month:');
+                      print(encryptedCard.expiryMonth);
+                      print('');
+                      print('Encrypted expiry year:');
+                      print(encryptedCard.expiryYear);
+
                     });
                   },
                   child: Text('Encrypt Card'),
