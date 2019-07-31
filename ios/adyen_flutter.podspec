@@ -3,7 +3,7 @@
 #
 Pod::Spec.new do |s|
   s.name             = 'adyen_flutter'
-  s.version          = '0.0.1'
+  s.version          = '0.0.4'
   s.summary          = 'An Adyen Flutter plugin for tha API integration'
   s.description      = <<-DESC
 An Adyen Flutter plugin to support the API integration
@@ -15,7 +15,7 @@ An Adyen Flutter plugin to support the API integration
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-  s.dependency 'Adyen/Card'
+  s.dependency 'Adyen/Card', '~> 2.7.2'
 
   s.ios.deployment_target = '10.3'
 end

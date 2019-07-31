@@ -3,7 +3,7 @@ PODS:
     - Adyen/Core
   - Adyen/Core (2.5.0):
     - AdyenInternal (= 2.5.0)
-  - adyen_flutter (0.0.1):
+  - adyen_flutter (0.0.4):
     - Adyen/Card
     - Flutter
   - AdyenInternal (2.5.0)

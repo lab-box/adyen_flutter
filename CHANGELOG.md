@@ -1,6 +1,6 @@
 ## 0.0.4
 
-Updated the read me file
+Updated the read me file, forced ios lib version to ~> 2.7.2
 
 ## 0.0.3
 
